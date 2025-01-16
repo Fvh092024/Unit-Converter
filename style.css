@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  width: 100vw;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: rgb(65, 64, 64);
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  margin-top: 37px;
+}
+
+#input-El {
+  color: white;
+  border: 2px solid grey;
+  font-size: 3rem;
+  padding: 0px 9px;
+  margin-top: 35px;
+  width: 111px;
+  background-color: #6943ff;
+}
+
+#convert-btn {
+  margin-top: 23px;
+  background-color: #ffffff;
+  border: none;
+  width: 80px;
+  height: 35px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+#convert-btn:hover {
+  background-color: #000000;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+#card-holder {
+  border: 7px solid #fefefe;
+  width: 520px;
+  height: 684px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+#converter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #6943ff;
+  height: 38.88%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding-bottom: 20px; /* Adjust this to remove space */
+}
+
+h3 {
+  color: white;
+}
+
+#all-values {
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-grow: 1; /* Allow this section to take up remaining space */
+  padding-bottom: 0; /* Ensure there's no unwanted space at the bottom */
+}
+
+.ind-values {
+  background-color: white;
+  width: 462px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 23px;
+}
+.unit-header {
+  color: #564f78;
+  font-size: 18px;
+  font-weight: 500;
+}
+#input-value:focus {
+  outline: none;
+  border-color: #6943ff;
+}
