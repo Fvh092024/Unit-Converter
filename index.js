@@ -24,16 +24,22 @@ convertBtn.addEventListener("click", function () {
     alert("Please enter a valid number.");
     return;
   }
-
-  length.textContent = `${baseValue} meters = ${
+  function roundDown(value) {
+    return Math.floor(value * 1000) / 1000;
+  }
+  length.textContent = `${baseValue} meters = ${roundDown(
     baseValue * meterToFeet
-  } feet | ${baseValue} feet = ${baseValue * feetToMeter} meters`;
+  )} feet | ${baseValue} feet = ${roundDown(baseValue * feetToMeter)} meters`;
 
-  volume.textContent = `${baseValue} liters = ${
+  volume.textContent = `${baseValue} liters = ${roundDown(
     baseValue * literToGallon
-  } gallons | ${baseValue} gallons = ${baseValue * gallonToLiter} liters`;
+  )} gallons | ${baseValue} gallons = ${roundDown(
+    baseValue * gallonToLiter
+  )} liters`;
 
-  mass.textContent = `${baseValue} kilos = ${
+  mass.textContent = `${baseValue} kilos = ${roundDown(
     baseValue * kiloToPound
-  } pounds | ${baseValue} pounds = ${baseValue * poundToKilo} kilos`;
+  )} pounds | ${baseValue} pounds = ${roundDown(
+    baseValue * poundToKilo
+  )} kilos`;
 });
